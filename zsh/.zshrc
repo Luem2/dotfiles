@@ -17,6 +17,9 @@ export ZSH="$HOME/.oh-my-zsh"
 export DENO_INSTALL="/home/$USER/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+# .local/bin path
+export PATH="$HOME/.local/bin:$PATH"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
