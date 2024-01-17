@@ -8,8 +8,3 @@ For example: `stow zsh`. This will take the `zsh` folder as if it were the home 
 
 ## Important tip
 I had to put this repository in the home directory, because I had it in the `$HOME/development` directory and it didn't work. I didn't even get the error output, it just failed silently.
-
-## Programs that i use
-
-`TODO: step by step to how install too`
-
