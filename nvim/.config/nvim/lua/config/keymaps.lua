@@ -15,8 +15,10 @@ keymap.set("n", "<leader>rl", "<Plug>RestNvimLast", opts)
 
 -- icons (emojis)
 keymap.set("n", "<Leader>in", "<cmd>IconPickerNormal<cr>", opts)
-keymap.set("n", "<Leader>iy", "<cmd>IconPickerYank<cr>", opts) --> Yank the selected icon into register
--- TODO: Agregar las descripciones de telescope a emoji & rest.nvim
+keymap.set("n", "<Leader>iy", "<cmd>IconPickerYank<cr>", opts)
+
+-- oil.nvim
+keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })
 
 -- Documentacion de los atajos
 
