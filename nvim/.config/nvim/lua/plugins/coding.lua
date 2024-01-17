@@ -38,4 +38,12 @@ return {
 			vim.fn["mkdp#util#install"]()
 		end,
 	},
+
+	-- package-info
+	{
+		"vuki656/package-info.nvim",
+		config = function()
+			require("package-info").setup()
+		end,
+	},
 }

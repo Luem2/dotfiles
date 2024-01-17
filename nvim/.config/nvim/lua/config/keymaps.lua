@@ -8,6 +8,9 @@ local opts = { noremap = true, silent = true }
 -- select all
 keymap.set("n", "<C-a>", "gg<S-v>G", opts)
 
+-- oil.nvim
+keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })
+
 -- rest.nvim
 keymap.set("n", "<leader>rr", "<Plug>RestNvim", opts)
 keymap.set("n", "<leader>rp", "<Plug>RestNvimPreview", opts)
@@ -17,11 +20,16 @@ keymap.set("n", "<leader>rl", "<Plug>RestNvimLast", opts)
 keymap.set("n", "<Leader>in", "<cmd>IconPickerNormal<cr>", opts)
 keymap.set("n", "<Leader>iy", "<cmd>IconPickerYank<cr>", opts)
 
--- oil.nvim
-keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })
+-- package-info
+keymap.set({ "n" }, "<LEADER>ns", require("package-info").show, opts)
+keymap.set({ "n" }, "<LEADER>nc", require("package-info").hide, opts)
+keymap.set({ "n" }, "<LEADER>nt", require("package-info").toggle, opts)
+keymap.set({ "n" }, "<LEADER>nu", require("package-info").update, opts)
+keymap.set({ "n" }, "<LEADER>nd", require("package-info").delete, opts)
+keymap.set({ "n" }, "<LEADER>ni", require("package-info").install, opts)
+keymap.set({ "n" }, "<LEADER>np", require("package-info").change_version, opts)
 
 -- Documentacion de los atajos
-
 local wk = require("which-key")
 
 local mappings = {
@@ -35,6 +43,16 @@ local mappings = {
 		name = "icons/emojis",
 		n = { "Insert icon selected" },
 		y = { "Copy the emoji to clipboard" },
+	},
+	n = {
+		name = "npm/package-info",
+		s = { "Show dependency versions" },
+		c = { "Hide dependency versions" },
+		t = { "Toggle dependency versions" },
+		u = { "Update dependency on the line" },
+		d = { "Delete dependency on the line" },
+		i = { "Install a new dependency" },
+		p = { "Install a different dependency version" },
 	},
 }
 
