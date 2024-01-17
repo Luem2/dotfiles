@@ -118,6 +118,8 @@ alias pino=$PINO_SSH
 alias blip=$BLIP_SSH
 alias distro='cat /etc/*-release'
 alias reload='source ~/.zshrc'
+alias lzg='lazygit'
+alias lzd='lazydocker'
 
 # show the current directory folders & files when run "ls"
 function chpwd() {
