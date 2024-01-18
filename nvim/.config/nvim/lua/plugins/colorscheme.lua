@@ -1,5 +1,8 @@
 return {
 	{
+		"xiyaowong/transparent.nvim",
+	},
+	{
 		"catppuccin/nvim",
 		name = "catppuccin",
 		lazy = false,
@@ -46,9 +49,6 @@ return {
 	{
 		"Mofiqul/vscode.nvim",
 		priority = 1000,
-	},
-	{
-		"xiyaowong/transparent.nvim",
 	},
 	{
 		"LazyVim/LazyVim",

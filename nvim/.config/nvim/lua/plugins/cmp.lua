@@ -1,0 +1,56 @@
+return {
+	{
+		"L3MON4D3/LuaSnip",
+		-- follow latest release.
+		version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+		-- install jsregexp (optional!).
+		build = "make install_jsregexp",
+		dependencies = { "rafamadriz/friendly-snippets" },
+	},
+
+	-- snippets
+	{
+		"rafamadriz/friendly-snippets",
+	},
+
+	-- codeium with cmp
+	{
+		"nvim-cmp",
+		dependencies = {
+			-- codeium
+			{
+				"Exafunction/codeium.nvim",
+				cmd = "Codeium",
+				build = ":Codeium Auth",
+				opts = {},
+			},
+		},
+		---@param opts cmp.ConfigSchema
+		opts = function(_, opts)
+			table.insert(opts.sources, 1, {
+				name = "codeium",
+				group_index = 1,
+				priority = 100,
+			})
+		end,
+	},
+
+	-- codeium inline
+	-- {
+	--   "Exafunction/codeium.vim",
+	--   config = function()
+	--     vim.keymap.set("i", "<C-g>", function()
+	--       return vim.fn["codeium#Accept"]()
+	--     end, { expr = true })
+	--     vim.keymap.set("i", "<C-l>", function()
+	--       return vim.fn["codeium#CycleCompletions"](1)
+	--     end, { expr = true })
+	--     vim.keymap.set("i", "<C-M>", function()
+	--       return vim.fn["codeium#Complete"]()
+	--     end, { expr = true })
+	--     vim.keymap.set("i", "<C-x>", function()
+	--       return vim.fn["codeium#Clear"]()
+	--     end, { expr = true })
+	--   end,
+	-- },
+}
