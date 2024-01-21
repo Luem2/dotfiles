@@ -5,6 +5,17 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
+-- smooth motions
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- disable keymaps
+keymap.set({ "n", "v" }, "Q", "<Nop>")
+keymap.set({ "n", "v" }, "&", "<Nop>")
+-- NOTE: temporarily disabled until I get used to not using them.
+keymap.set({ "n", "i", "v" }, "<C-c>", "<Nop>")
+keymap.set("n", "<leader>e", "<Nop>")
+
 -- select all
 keymap.set("n", "<C-a>", "gg<S-v>G", opts)
 

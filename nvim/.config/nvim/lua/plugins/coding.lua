@@ -34,6 +34,7 @@ return {
 	},
 
 	-- formatter
+	-- https://github.com/stevearc/conform.nvim
 	{
 		"stevearc/conform.nvim",
 		optional = true,
@@ -55,7 +56,8 @@ return {
 		},
 	},
 
-	--  linter
+	-- linter
+	-- https://github.com/mfussenegger/nvim-lint
 	{
 		"mfussenegger/nvim-lint",
 		opts = {
