@@ -21,6 +21,7 @@ google-chrome
 grub-customizer
 htop
 inkscape
+kitty
 krita
 lazydocker
 lazygit
@@ -38,9 +39,7 @@ python3
 slack
 steam
 stow
-terminator
 thunderbird
-tmux
 vlc
 xclip
 xsel
