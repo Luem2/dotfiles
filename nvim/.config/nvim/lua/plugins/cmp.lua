@@ -13,44 +13,51 @@ return {
 		"rafamadriz/friendly-snippets",
 	},
 
-	-- codeium with cmp
+	-- codeium inline
 	{
-		"nvim-cmp",
-		dependencies = {
-			-- codeium
-			{
-				"Exafunction/codeium.nvim",
-				cmd = "Codeium",
-				build = ":Codeium Auth",
-				opts = {},
-			},
-		},
-		---@param opts cmp.ConfigSchema
-		opts = function(_, opts)
-			table.insert(opts.sources, 1, {
-				name = "codeium",
-				group_index = 1,
-				priority = 100,
-			})
+		"Exafunction/codeium.vim",
+		event = "BufEnter",
+		config = function()
+			-- disable default keymaps from command line
+			vim.g.codeium_disable_bindings = 1
+
+			vim.keymap.set("i", "<C-CR>", function()
+				return vim.fn["codeium#Accept"]()
+			end, { expr = true, silent = true })
+			vim.keymap.set("i", "<C-.>", function()
+				return vim.fn["codeium#CycleCompletions"](1)
+			end, { expr = true, silent = true })
+			vim.keymap.set("i", "<C-,>", function()
+				return vim.fn["codeium#CycleCompletions"](-1)
+			end, { expr = true, silent = true })
+			vim.keymap.set("i", "<C-Z>", function()
+				return vim.fn["codeium#Clear"]()
+			end, { expr = true, silent = true })
+			vim.keymap.set("i", "<C-X>", function()
+				return vim.fn["codeium#Complete"]()
+			end, { expr = true, silent = true })
 		end,
 	},
 
-	-- codeium inline
+	-- codeium with cmp
 	-- {
-	--   "Exafunction/codeium.vim",
-	--   config = function()
-	--     vim.keymap.set("i", "<C-g>", function()
-	--       return vim.fn["codeium#Accept"]()
-	--     end, { expr = true })
-	--     vim.keymap.set("i", "<C-l>", function()
-	--       return vim.fn["codeium#CycleCompletions"](1)
-	--     end, { expr = true })
-	--     vim.keymap.set("i", "<C-M>", function()
-	--       return vim.fn["codeium#Complete"]()
-	--     end, { expr = true })
-	--     vim.keymap.set("i", "<C-x>", function()
-	--       return vim.fn["codeium#Clear"]()
-	--     end, { expr = true })
-	--   end,
+	-- 	"nvim-cmp",
+	-- 	dependencies = {
+	-- 		-- codeium
+	-- 		{
+	-- 			"Exafunction/codeium.nvim",
+	-- 			cmd = "Codeium",
+	-- 			build = ":Codeium Auth",
+	-- 			opts = {},
+	-- 		},
+	-- 	},
+	-- 	---@param opts cmp.ConfigSchema
+	-- 	opts = function(_, opts)
+	-- 		table.insert(opts.sources, 1, {
+	-- 			name = "codeium",
+	-- 			group_index = 1,
+	-- 			priority = 100,
+	-- 		})
+	-- 	end,
 	-- },
 }
