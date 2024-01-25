@@ -1,4 +1,12 @@
 return {
+	--gen.nvim - generate text using LLMs with customizables promts (ollama)
+	{
+		"David-Kunz/gen.nvim",
+		-- docker container running ollama
+		container = "mistral",
+	},
+
+	-- snippets
 	{
 		"L3MON4D3/LuaSnip",
 		-- follow latest release.
@@ -8,12 +16,12 @@ return {
 		dependencies = { "rafamadriz/friendly-snippets" },
 	},
 
-	-- snippets
+	-- vscode like snippets
 	{
 		"rafamadriz/friendly-snippets",
 	},
 
-	-- codeium inline
+	-- codeium
 	{
 		"Exafunction/codeium.vim",
 		event = "BufEnter",
@@ -38,26 +46,4 @@ return {
 			end, { expr = true, silent = true })
 		end,
 	},
-
-	-- codeium with cmp
-	-- {
-	-- 	"nvim-cmp",
-	-- 	dependencies = {
-	-- 		-- codeium
-	-- 		{
-	-- 			"Exafunction/codeium.nvim",
-	-- 			cmd = "Codeium",
-	-- 			build = ":Codeium Auth",
-	-- 			opts = {},
-	-- 		},
-	-- 	},
-	-- 	---@param opts cmp.ConfigSchema
-	-- 	opts = function(_, opts)
-	-- 		table.insert(opts.sources, 1, {
-	-- 			name = "codeium",
-	-- 			group_index = 1,
-	-- 			priority = 100,
-	-- 		})
-	-- 	end,
-	-- },
 }
