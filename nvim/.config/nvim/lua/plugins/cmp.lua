@@ -3,7 +3,7 @@ return {
 	{
 		"David-Kunz/gen.nvim",
 		-- docker container running ollama
-		container = "mistral",
+		container = "ollama-nvim",
 	},
 
 	-- snippets
