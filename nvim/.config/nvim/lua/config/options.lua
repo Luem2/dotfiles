@@ -4,7 +4,11 @@
 
 local opt = vim.opt
 
-opt.wrap = true
-opt.mouse = ""
-opt.shiftwidth = 4
+-- tab & indentation
 opt.tabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = true
+opt.autoindent = true
+
+-- line wrapping
+opt.wrap = true
