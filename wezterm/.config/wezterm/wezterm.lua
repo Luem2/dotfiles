@@ -10,5 +10,4 @@ return {
 		scale = 1.2,
 	}),
 	font_size = 12,
-	default_prog = { "zsh", "-c", "tmux attach || tmux new-session" },
 }
