@@ -120,8 +120,6 @@ alias distro='cat /etc/*-release'
 alias reload='source ~/.zshrc'
 alias lzg='lazygit'
 alias lzd='lazydocker'
-alias themes='kitty +kitten themes'
-alias icat='kitty +kitten icat'
 
 # show the current directory folders & files when run "ls"
 function chpwd() {
