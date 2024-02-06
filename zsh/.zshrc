@@ -1,3 +1,15 @@
+# Exec tmux on terminal startup
+if [ -z "$TMUX" ]; then
+  # Verificar si existe una sesión llamada "main"
+  if tmux has-session -t main 2>/dev/null; then
+    # Si existe, adjuntarse a ella
+    exec tmux attach-session -t main
+  else
+    # Si no existe, crear una nueva sesión llamada "main"
+    exec tmux new-session -s main
+  fi
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -154,16 +166,4 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 if [ -x "$(command -v fzf)"  ]
 then
   source /usr/share/fzf/shell/key-bindings.zsh
-fi
-
-# Start tmux if not already in tmux
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  # Verificar si existe una sesión llamada "main"
-  if tmux has-session -t main 2>/dev/null; then
-    # Si existe, adjuntarse a ella
-    exec tmux attach-session -t main
-  else
-    # Si no existe, crear una nueva sesión llamada "main"
-    exec tmux new-session -s main
-  fi
 fi
