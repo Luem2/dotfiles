@@ -10,6 +10,10 @@ keymap.set({ "n", "v" }, "Q", "<Nop>")
 keymap.set({ "n", "v" }, "&", "<Nop>")
 keymap.set("i", "<C-k>", "<Nop>")
 
+-- disable float terminal
+keymap.del("n", "<leader>ft")
+keymap.del("n", "<c-_>")
+
 -- select all
 keymap.set("n", "<leader>a", "gg<S-v>G", opts)
 
