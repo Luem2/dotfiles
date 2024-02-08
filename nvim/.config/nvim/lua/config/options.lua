@@ -12,3 +12,6 @@ opt.autoindent = true
 
 -- line wrapping
 opt.wrap = true
+
+-- exrc (local .nvimrc config)
+opt.exrc = true
