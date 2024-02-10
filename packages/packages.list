@@ -2,7 +2,7 @@ alacarte
 android-studio
 authy-desktop
 bat
-brave
+bitwarden CLI
 cheese
 cmatrix
 cowsay
@@ -42,7 +42,10 @@ slack
 steam
 stow
 thunderbird
+tmux
+vivaldi browser
 vlc
 xclip
 xsel
+wezterm
 zsh
