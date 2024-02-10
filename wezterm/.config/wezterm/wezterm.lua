@@ -11,6 +11,7 @@ local config = {
 		scale = 1.2,
 	}),
 	font_size = 12,
+	window_decorations = "RESIZE",
 
 	-- keys assignments
 	keys = {
