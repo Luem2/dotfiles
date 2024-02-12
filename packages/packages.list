@@ -1,3 +1,4 @@
+abduco
 alacarte
 android-studio
 authy-desktop
@@ -10,9 +11,8 @@ curl
 dbeaver
 discord
 docker
-eza
+eza or lsd
 firefox
-flatpak
 fzf
 gimp
 git
@@ -22,7 +22,6 @@ grub-customizer
 htop
 inkscape
 insomnia
-kitty
 krita
 lazydocker
 lazygit
@@ -37,12 +36,13 @@ obs-studio
 openssl
 piper
 python3
+ranger or yazi
 runjs
 slack
 steam
 stow
 thunderbird
-tmux
+trash-cli
 vivaldi browser
 vlc
 xclip
