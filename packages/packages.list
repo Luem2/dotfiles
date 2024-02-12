@@ -4,6 +4,7 @@ android-studio
 authy-desktop
 bat
 bitwarden CLI
+boxes (qemu/kvm)
 cheese
 cmatrix
 cowsay
@@ -41,6 +42,7 @@ runjs
 slack
 steam
 stow
+timeshift (backups)
 thunderbird
 trash-cli
 vivaldi browser
