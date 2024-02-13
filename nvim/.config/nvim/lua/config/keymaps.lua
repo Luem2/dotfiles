@@ -53,21 +53,6 @@ keymap.set({ "n" }, "<LEADER>nd", require("package-info").delete, opts)
 keymap.set({ "n" }, "<LEADER>ni", require("package-info").install, opts)
 keymap.set({ "n" }, "<LEADER>np", require("package-info").change_version, opts)
 
--- gen.nvim (ollama shortcuts)
-keymap.set({ "n", "v" }, "<Leader>om", ":Gen<CR>", opts)
-keymap.set({ "n", "v" }, "<Leader>oa", ":Gen Ask<CR>", opts)
-keymap.set({ "n", "v" }, "<leader>oG", ":Gen Generate<CR>", opts)
-keymap.set({ "n", "v" }, "<leader>oc", ":Gen Chat<CR>", opts)
-keymap.set("v", "<leader>og", ":Gen Enhance_Grammar_Spelling<CR>", opts)
-keymap.set("v", "<leader>oC", ":Gen Enhance_Code<CR>", opts)
-keymap.set("v", "<leader>os", ":Gen Summarize<CR>", opts)
-keymap.set("v", "<leader>or", ":Gen Review_Code<CR>", opts)
-keymap.set("v", "<leader>ox", ":Gen Change<CR>", opts)
-keymap.set("v", "<leader>ow", ":Gen Enhance_Wording<CR>", opts)
-keymap.set("v", "<leader>odc", ":Gen Make_Concise<CR>", opts)
-keymap.set("v", "<leader>odl", ":Gen Make_List<CR>", opts)
-keymap.set("v", "<leader>odt", ":Gen Make_Table<CR>", opts)
-
 -- Documentacion de los atajos
 local wk = require("which-key")
 
@@ -92,25 +77,6 @@ local mappings = {
 		d = { "Delete dependency on the line" },
 		i = { "Install a new dependency" },
 		p = { "Install a different dependency version" },
-	},
-	o = {
-		name = "gen.nvim/ollama",
-		a = { "Ask ollama" },
-		c = { "Chat ollama" },
-		C = { "Enhance code" },
-		d = {
-			name = "Make actions",
-			c = { "Make concise" },
-			l = { "Make list" },
-			t = { "Make table" },
-		},
-		g = { "Enhance grammar" },
-		G = { "Generate" },
-		m = { "Show ollama options menu" },
-		r = { "Review code" },
-		s = { "Summarize" },
-		w = { "Enhance wording" },
-		x = { "Change" },
 	},
 }
 
