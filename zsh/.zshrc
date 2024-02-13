@@ -109,12 +109,10 @@ alias l='eza -F --icons --color=always --group-directories-first'
 alias l.='eza -a | egrep "^\."'
 
 #utility
-alias v='nvim'
 alias cat='bat'
 alias myip='curl ifconfig.me; echo'
-# environment config in: ~/.zshenv
-alias pino=$PINO_SSH
-alias blip=$BLIP_SSH
+alias pino=$PINO_SSH # environment config in: ~/.zshenv
+alias blip=$BLIP_SSH # environment config in: ~/.zshenv
 alias distro='cat /etc/*-release'
 alias reload='source ~/.zshrc'
 alias lzg='lazygit'
