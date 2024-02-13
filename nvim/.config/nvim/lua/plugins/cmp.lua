@@ -1,11 +1,4 @@
 return {
-	--gen.nvim - generate text using LLMs with customizables promts (ollama)
-	{
-		"David-Kunz/gen.nvim",
-		-- docker container running ollama
-		container = "ollama-nvim",
-	},
-
 	-- snippets
 	{
 		"L3MON4D3/LuaSnip",
