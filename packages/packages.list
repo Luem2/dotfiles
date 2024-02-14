@@ -1,9 +1,9 @@
 abduco
-alacarte
+alacarte (GNOME)
 android-studio
 bat
 bitwarden CLI
-boxes (qemu/kvm)
+boxes or another virtualization tool (qemu/kvm)
 btop
 cheese
 cmatrix
@@ -18,7 +18,6 @@ fzf
 gimp
 git
 github-cli
-google-chrome
 grub-customizer
 htop
 inkscape
@@ -27,7 +26,6 @@ krita
 lazydocker
 lazygit
 mongodb-compass
-nautilus
 neofetch
 neovide (frontend for neovim)
 nextcloud desktop
@@ -50,5 +48,4 @@ vivaldi browser
 vlc
 xclip
 xsel
-wezterm
 zsh
