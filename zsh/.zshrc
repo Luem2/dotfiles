@@ -82,16 +82,18 @@ DISABLE_MAGIC_FUNCTIONS="true"
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(
-z
-git
-zsh-syntax-highlighting
-zsh-autosuggestions
+command-time
 copypath
 copyfile
 copybuffer
-web-search
-command-time
+docker
+docker-compose
+git
 sudo
+web-search
+zsh-syntax-highlighting
+zsh-autosuggestions
+z
 )
 
 source $ZSH/oh-my-zsh.sh
