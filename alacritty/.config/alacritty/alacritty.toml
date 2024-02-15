@@ -26,7 +26,7 @@ family = "CaskaydiaCove Nerd Font"
 style = "Bold Italic"
 
 [cursor]
-style.shape = "Beam"
+style.shape = "Underline"
 vi_mode_style = "Block"
 
 [[keyboard.bindings]]
