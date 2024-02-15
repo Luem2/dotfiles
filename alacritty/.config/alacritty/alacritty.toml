@@ -34,3 +34,7 @@ key = "v"
 mods = "Control"
 action = "ToggleViMode"
 
+[[keyboard.bindings]]
+key = "Return"
+mods = "Control|Shift"
+action = "SpawnNewInstance"
