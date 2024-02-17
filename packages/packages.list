@@ -1,7 +1,9 @@
 abduco
 alacarte (GNOME)
+alacritty
 android-studio
 bat
+bat-extras
 bitwarden CLI
 boxes or another virtualization tool (qemu/kvm)
 btop
@@ -12,7 +14,8 @@ curl
 dbeaver
 discord
 docker
-eza or lsd
+exa (or eza if not exa not working) or lsd
+fd
 firefox
 fzf
 gimp
@@ -22,11 +25,15 @@ grub-customizer
 htop
 inkscape
 insomnia
+kitty
 krita
 lazydocker
 lazygit
+lynis
 mongodb-compass
+nautilus or thunar
 neofetch
+neovim
 neovide (frontend for neovim)
 nextcloud desktop
 nmap
@@ -37,6 +44,8 @@ openssl
 piper
 python3
 ranger or yazi
+ripgrep
+rofi
 runjs
 slack
 steam
@@ -44,6 +53,7 @@ stow
 timeshift (backups)
 thunderbird
 trash-cli
+ufw (firewall)
 vivaldi browser
 vlc
 xclip
