@@ -15,3 +15,8 @@ opt.wrap = true
 
 -- exrc (local .nvimrc config)
 opt.exrc = true
+
+if vim.g.neovide then
+	vim.o.guifont = "CaskaydiaCove Nerd Font:h14"
+	vim.g.neovide_transparency = 0.80
+end
