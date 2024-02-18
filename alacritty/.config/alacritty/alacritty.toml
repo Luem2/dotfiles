@@ -30,11 +30,6 @@ style.shape = "Underline"
 vi_mode_style = "Block"
 
 [[keyboard.bindings]]
-key = "v"
-mods = "Control"
-action = "ToggleViMode"
-
-[[keyboard.bindings]]
 key = "Return"
 mods = "Control|Shift"
 action = "SpawnNewInstance"

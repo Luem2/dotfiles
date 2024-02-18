@@ -1,3 +1,5 @@
+setopt HIST_IGNORE_ALL_DUPS
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -88,11 +90,13 @@ copyfile
 copybuffer
 docker
 docker-compose
+fzf
 git
 sudo
 web-search
-zsh-syntax-highlighting
 zsh-autosuggestions
+zsh-syntax-highlighting
+zsh-vi-mode
 z
 )
 
@@ -149,10 +153,3 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# fzf keybindings
-if [ -x "$(command -v fzf)"  ]
-then
-  source /usr/share/fzf/key-bindings.zsh
-fi
-
-setopt HIST_IGNORE_ALL_DUPS
