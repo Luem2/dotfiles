@@ -149,8 +149,10 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# fzf on Fedora
+# fzf keybindings
 if [ -x "$(command -v fzf)"  ]
 then
-  source /usr/share/fzf/shell/key-bindings.zsh
+  source /usr/share/fzf/key-bindings.zsh
 fi
+
+setopt HIST_IGNORE_ALL_DUPS
