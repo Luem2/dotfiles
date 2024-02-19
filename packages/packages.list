@@ -23,6 +23,7 @@ fzf
 gimp
 git
 github-cli
+hyprpaper
 htop
 httpie-cli
 httpie-desktop
@@ -59,6 +60,7 @@ thunderbird
 trash-cli
 ufw (firewall)
 vlc
+waybar
 wl-clipboard (wayland env)
 xclip
 xsel
