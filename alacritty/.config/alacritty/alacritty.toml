@@ -1,13 +1,17 @@
+import = [
+    "~/.config/alacritty/themes/tokyo-night.toml"
+]
+
 [shell]
 program = "/usr/bin/zsh"
 args = ["-l"]
 
 [window]
-opacity = 0.90
+opacity = 0.80
 blur = true
 
 [font]
-size = 12
+size = 14
 
 [font.normal]
 family = "CaskaydiaCove Nerd Font"
