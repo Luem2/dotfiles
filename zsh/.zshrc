@@ -121,6 +121,7 @@ alias pino=$PINO_SSH # environment config in: ~/.zshenv
 alias blip=$BLIP_SSH # environment config in: ~/.zshenv
 alias distro='cat /etc/*-release'
 alias reload='source ~/.zshrc'
+alias nvide='neovide'
 alias lzg='lazygit'
 alias lzd='lazydocker'
 
