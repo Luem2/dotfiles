@@ -2,11 +2,9 @@ abduco
 alacarte (GNOME)
 alacritty
 android-studio
-appimagelauncher
 bat
-bat-extras
 bitwarden CLI
-boxes or another virtualization tool (qemu/kvm)
+boxes (GNOME)
 btop
 cava
 cheese
@@ -19,11 +17,11 @@ docker
 exa (or eza if not exa not working) or lsd
 fd
 firefox
+firewalld
 fzf
 gimp
 git
 github-cli
-hyprpaper
 htop
 httpie-cli
 httpie-desktop
@@ -32,25 +30,18 @@ kitty
 krita
 lazydocker
 lazygit
-lynis
 mongodb-compass
-nautilus or thunar
 neofetch
 neovim
 neovide (frontend for neovim)
-nextcloud desktop
 nmap
-node
-npm
 nvidia-container-toolkit
 nvim
 obs-studio
-openssl
 piper
 python3
 ranger or yazi
 ripgrep
-rofi o wofi (wayland)
 runjs
 slack
 steam
@@ -58,9 +49,8 @@ stow
 timeshift (backups)
 thunderbird
 trash-cli
-ufw (firewall)
 vlc
-waybar
+warp
 wl-clipboard (wayland env)
 xclip
 xsel
