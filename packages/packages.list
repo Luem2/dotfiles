@@ -40,7 +40,6 @@ nvim
 obs-studio
 piper
 python3
-ranger or yazi
 ripgrep
 runjs
 slack
@@ -54,4 +53,5 @@ warp
 wl-clipboard (wayland env)
 xclip
 xsel
+yazi (file manager)
 zsh
