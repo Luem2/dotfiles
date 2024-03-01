@@ -7,7 +7,7 @@ program = "/usr/bin/zsh"
 args = ["-l"]
 
 [window]
-opacity = 0.80
+opacity = 0.96
 blur = true
 
 [font]
