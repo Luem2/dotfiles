@@ -5,11 +5,6 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
--- disable keymaps
-keymap.set({ "n", "v" }, "Q", "<Nop>")
-keymap.set({ "n", "v" }, "&", "<Nop>")
-keymap.set("i", "<C-k>", "<Nop>")
-
 -- select all
 keymap.set("n", "<leader>a", "gg<S-v>G", opts)
 
