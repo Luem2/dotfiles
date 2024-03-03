@@ -24,20 +24,6 @@ return {
 	},
 
 	{
-		"ziontee113/icon-picker.nvim",
-		config = function()
-			require("icon-picker").setup({ disable_legacy_commands = true })
-		end,
-	},
-
-	{
-		"norcalli/nvim-colorizer.lua",
-		config = function()
-			require("colorizer").setup()
-		end,
-	},
-
-	{
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v3.x",
 		dependencies = {
@@ -66,20 +52,6 @@ return {
 						-- or
 						require("neo-tree.command").execute({ action = "close" })
 					end,
-				},
-			},
-		},
-	},
-
-	{
-		"nvim-tree/nvim-web-devicons",
-		opts = {
-			strict = true,
-			override_by_extension = {
-				["astro"] = {
-					icon = "",
-					color = "#f1502f",
-					name = "Astro",
 				},
 			},
 		},
