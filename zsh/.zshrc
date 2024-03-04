@@ -10,7 +10,7 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-export EDITOR=nvim
+export EDITOR=code
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -96,7 +96,6 @@ sudo
 web-search
 zsh-autosuggestions
 zsh-syntax-highlighting
-zsh-vi-mode
 z
 )
 
