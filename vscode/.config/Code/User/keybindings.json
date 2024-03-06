@@ -1,0 +1,94 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+	{
+		"command": "workbench.action.zoomReset",
+		"key": "ctrl+0"
+	},
+	{
+		"command": "projectManager.listGitProjects#sideBarGit",
+		"key": "ctrl+o"
+	},
+	{
+		"command": "workbench.action.toggleSidebarVisibility",
+		"key": "ctrl+e"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "expand_region",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "workbench.files.action.focusFilesExplorer",
+		"key": "ctrl+e",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "turboConsoleLog.displayLogMessage",
+		"key": "ctrl+i"
+	},
+	{
+		"command": "workbench.action.toggleZenMode",
+		"key": "ctrl+z"
+	},
+	{
+		"command": "-workbench.view.scm",
+		"key": "ctrl+shift+g g",
+		"when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+	},
+	{
+		"command": "workbench.view.scm",
+		"key": "ctrl+shift+g",
+		"when": "workbench.scm.active"
+	},
+	{
+		"command": "-workbench.view.scm",
+		"key": "ctrl+shift+g",
+		"when": "workbench.scm.active"
+	},
+	{
+		"command": "-workbench.action.terminal.openDetectedLink",
+		"key": "ctrl+shift+g",
+		"when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"command": "-workbench.action.focusFirstEditorGroup",
+		"key": "ctrl+1"
+	},
+	{
+		"command": "-workbench.action.focusSecondEditorGroup",
+		"key": "ctrl+2"
+	},
+	{
+		"command": "-workbench.action.focusThirdEditorGroup",
+		"key": "ctrl+3"
+	},
+	{
+		"command": "-workbench.action.focusFourthEditorGroup",
+		"key": "ctrl+4"
+	},
+	{
+		"command": "-workbench.action.focusFifthEditorGroup",
+		"key": "ctrl+5"
+	},
+	{
+		"command": "-workbench.action.focusSixthEditorGroup",
+		"key": "ctrl+6"
+	},
+	{
+		"command": "-workbench.action.focusSeventhEditorGroup",
+		"key": "ctrl+7"
+	},
+	{
+		"command": "-workbench.action.focusEighthEditorGroup",
+		"key": "ctrl+8"
+	},
+	{
+		"command": "-workbench.action.lastEditorInGroup",
+		"key": "ctrl+9"
+	},
+	{
+		"key": "ctrl+i",
+		"command": "-editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+	}
+]
