@@ -2,16 +2,17 @@ abduco
 alacarte (GNOME)
 alacritty
 android-studio
+azure-data-studio
 bat
 bitwarden CLI
 boxes (GNOME)
 btop
 cava
 cheese
+chrome
 cmatrix
 cowsay
 curl
-dbeaver
 discord
 docker
 exa (or eza if not exa not working) or lsd
@@ -30,7 +31,6 @@ kitty
 krita
 lazydocker
 lazygit
-mongodb-compass
 neofetch
 neovim
 neovide (frontend for neovim)
@@ -42,13 +42,13 @@ piper
 python3
 ripgrep
 runjs
+skype
 slack
-steam
 stow
 timeshift (backups)
 thunderbird
 trash-cli
-vlc
+vscode
 warp
 wl-clipboard (wayland env)
 xclip
