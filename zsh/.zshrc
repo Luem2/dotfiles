@@ -117,7 +117,6 @@ alias l.='eza -a | egrep "^\."'
 alias cat='bat'
 alias myip='curl ifconfig.me; echo'
 alias pino=$PINO_SSH # environment config in: ~/.zshenv
-alias blip=$BLIP_SSH # environment config in: ~/.zshenv
 alias distro='cat /etc/*-release'
 alias reload='source ~/.zshrc'
 alias nvide='neovide'
